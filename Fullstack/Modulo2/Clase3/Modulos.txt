@@ -1,0 +1,15 @@
+Existen 3 tipos de modulos, el nativo, que ya estan incorporados en node.js. Modulo de terceros, se pueden instalar utilizando npm 
+y modulos creados por el usuario de forma local.
+
+1.- app.js >> para crear los requiere de modulos que descarguemos, tambien llamada entry points
+	IMPORTANTE: Los modulos que descarguemos o modulos locales se importan "let variable = require('nombremodulo')
+			Los modulos que locales o creados por el usuiario se importar "let variable = require ('./nombremodulo')
+
+2.- Para crear modulos locales, lo debemos hacer dentro de una carpeta ejemplo "superheroes" y crear un archivo index.js
+	Una vez creado el objeto, debemos utilizar la funcion module.exports y el nombre de la variable.
+
+3.- En app.js, debemos crear una variable y desde ahí requerir el archivo que contiene el modulo creado.
+	Ejemplo: let heroes = require("./superheroes");
+
+4.- Si queremos visualizar el contenido de la variable que traemos, en el nmismo app.js se realizaria de esta forma
+	console.log(heroes) >> Si mostramos esta información veremos todo el contenido del array.

@@ -1,0 +1,34 @@
+[
+ {
+  "tarea": "Estudiar JS",
+  "estado": "NoIniciado"
+ },
+ {
+  "tarea": "Estudiar Arrays",
+  "estado": "EnProceso"
+ },
+ {
+  "tarea": "Estudiar Metodos",
+  "estado": "EnProceso"
+ },
+ {
+  "tarea": "Estudiar Arrow function",
+  "estado": "EnProceso"
+ },
+ {
+  "tarea": "Estudiar Arrays",
+  "estado": "NoIniciado"
+ },
+ {
+  "tarea": "prueba",
+  "estado": "NoIniciado"
+ },
+ {
+  "tarea": "prueba",
+  "estado": "NoIniciado"
+ },
+ {
+  "tarea": "prueba2",
+  "estado": "NoIniciado"
+ }
+]
