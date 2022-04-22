@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Roboto';
   margin: 0;
   padding: 0;
@@ -6,37 +6,50 @@ body{
   height: auto;
   position: absolute;
 }
-.logo{
+
+.logo {
   display: block;
   margin: 0px auto;
 }
-p{
+
+p {
   font-size: 12px;
 }
-.titulares{
+
+.titulares {
   font-size: 24px;
 }
-.precios{
+
+.precios {
   font-size: 18px;
 }
-.descuentos{
+
+.descuentos {
   font-size: 16px;
 }
-.descripcion{
+
+.descripcion {
   font-size: 16px;
   font-weight: bold;
 }
-header{
+
+header {
   background-color: #EAC926;
   display: grid;
+  padding-bottom: 1em;
 }
-.compra-cuotas{
+
+.compra-cuotas {
   text-align: center;
 }
-.burger-menu{
+
+.burger-menu {
   text-align: center;
+}
+
+.menu {
   background-color: #03264C;
-  width: auto; 
-  height: auto; 
-  color: white; 
+  color: white;
+  padding: 1% 1% 1% 1%;
+  border-radius: 2px 2px 2px 2px;
 }
