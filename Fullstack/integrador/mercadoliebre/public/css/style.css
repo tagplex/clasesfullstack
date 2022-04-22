@@ -1,11 +1,42 @@
-/* img{
-  border-width: 4px;
-  border-style: solid;
-  border-color: black;
+body{
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.logo{
+  display: block;
+  margin: 0px auto;
 }
 p{
-    color: brown;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    text-decoration: underline;
-} */
+  font-size: 12px;
+}
+.titulares{
+  font-size: 24px;
+}
+.precios{
+  font-size: 18px;
+}
+.descuentos{
+  font-size: 16px;
+}
+.descripcion{
+  font-size: 16px;
+  font-weight: bold;
+}
+header{
+  background-color: #EAC926;
+  display: grid;
+}
+.compra-cuotas{
+  text-align: center;
+}
+.burger-menu{
+  text-align: center;
+  background-color: #03264C;
+  width: auto; 
+  height: auto; 
+  color: white; 
+}
