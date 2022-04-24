@@ -18,18 +18,22 @@ p {
 
 .titulares {
   font-size: 24px;
+  text-align: center;
 }
 
 .precios {
   font-size: 18px;
+  text-align: center;
 }
 
 .descuentos {
   font-size: 16px;
+  text-align: center;
 }
 .descripcion {
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
 }
 
 header {
@@ -50,5 +54,5 @@ header {
   background-color: #03264C;
   color: white;
   padding: 1% 1% 1% 1%;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 5px 5px 5px 5px;
 }
