@@ -1,3 +1,7 @@
+:root{
+  --colorazul: #1159c3;
+}
+
 body {
   font-family: 'Roboto';
   margin: 0;
@@ -38,8 +42,8 @@ p {
 
 header {
   background-color: #EAC926;
-  display: grid;
-  padding-bottom: 1em;
+  width: 100%;
+  padding-bottom: 1em;  
 }
 
 .compra-cuotas {
@@ -51,8 +55,17 @@ header {
 }
 
 .menu {
-  background-color: #03264C;
+  background-color: var(--colorazul);
   color: white;
   padding: 1% 1% 1% 1%;
   border-radius: 5px 5px 5px 5px;
+}
+.search-bar{
+  margin-left: 15px;
+}
+.footer{
+  text-align: center;
+}
+.icon-footer{
+  color: var(--colorazul);
 }
