@@ -13,5 +13,5 @@ app.listen(3030, (req, res) => {
 });
 
 app.get("/",(req,res) => {
-    res.sendFile(path.resolve(__dirname,"./views/home.html"));
+    res.sendFile(path.resolve(__dirname,"./views/home2.html"));
 })
