@@ -79,7 +79,10 @@ p {
   width: 80%;
   margin: auto;
 }
-
+img .producto-imagen{
+  width: 150px;
+  height: 150px;
+}
 .camion {
   margin: 0px;
   padding: 0px;
@@ -94,8 +97,9 @@ p {
   background-color: #FFF;
   border-radius: 50%;
   color: #39b54a;
-  right: 20px;
-  top: -15px;
+  left: 220px;
+  top: -25px;
+  position: relative;
 }
 
 .cajageneral {
