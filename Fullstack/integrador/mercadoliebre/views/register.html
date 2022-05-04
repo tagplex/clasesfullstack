@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
     <link href="/css/style.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="/css/normalize.css">-->
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <div class="header-barra">
@@ -32,49 +33,51 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="login-bar">
-                <li><a href="#">Creá tu cuenta <i class="fa fa-id-card"></i></a></li>
+                <li><a href="/register">Creá tu cuenta <i class="fa fa-id-card"></i></a></li>
                 <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
-
-
     </header>
     <img class="img-banner" src="/img/img-home-banner.jpg" alt="">
     <main>
-        <h2 class="titulares">Registro de productos</h2>
-        <form action="#" method="POST" class="formularioregistro">
+
+        <form action="/registro" method="POST" class="formularioregistro">
+            <h2 class="titulares">Registro de productos</h2>
             <div class="control-formulario">
-                <label>Nombre del producto:</label>
-                <input type="text" name="nombre-producto"  class="control">
+                <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido" class="control">
             </div>
             <div class="control-formulario">
-                <label>Precio:</label>
-                <input type="number" name="precio" placeholder="123,56" class="control">
+                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="control">
+            </div>
+            <div class="control-formulario">
+                <input type="text" name="email" placeholder="E-mail" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="fecha" class="control">
+            </div>
+            <div class="control-formulario">
+                <input type="domicilio" name="domicilio" placeholder="Domicilio" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Perfil de usuario</label>
+                <input type="radio" name="comprador">Comprador
+                <input type="radio" name="vendedor">Vendedor
             </div>
             <div class="control-formulario">
                 <label>Categoria:</label>
-                <select name="categoria" class="control">
-                    <option value="hogar">Hogar</option>
-                    <option value="electro">Electro</option>
-                    <option value="indumentaria">Indumentaria</option>
+                    <input type="checkbox" name="interest" value="Electro">
+                    <label for="coding">Electro</label>
+                    <input type="checkbox" name="interest" value="moda">
+                    <label for="coding">Moda</label>
+                    <input type="checkbox" name="interest" value="hogar">
+                    <label for="coding">Hogar</label>
+                    <input type="checkbox" name="interest" value="jugueteria">
+                    <label for="coding">Jugueteria</label>
+                    <input type="checkbox" name="interest" value="vida-sana">
+                    <label for="coding">Vida Sana</label>
                 </select>
-            </div>
-            <div class="control-formulario">
-                <label>Ciudad:</label>
-                <select name="ciudad" class="control">
-                    <option value="santiago">Santiago</option>
-                    <option value="talca">Talca</option>
-                    <option value="ptomontt">Pto. Montt</option>
-                </select>
-            </div>
-            <div class="control-formulario">
-                <label>Descripcion del producto:</label>
-                <textarea name="descripcion" class="control"></textarea></textarea>
-            </div>
-            <div class="control-formulario">
-                <label>Esta en oferta:</label>
-                <input type="radio" name="oferta">
             </div>
             <button type="reset" class="boton-formulario">Reset</button>
             <button type="submit" class="boton-formulario">Guardar</button>

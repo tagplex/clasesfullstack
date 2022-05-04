@@ -152,32 +152,35 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  
 }
-/* .formularioregistro{
+
+/* CSS de registro y login */
+.formularioregistro{
   padding: 20px;
 }
 .control-formulario{
   margin-bottom: 15px;
 
 }
-.control-formulario label{
+/* .control-formulario label{
   margin-bottom: 5px;
-  font-style: italic;
   display: block;
-}
+  font-weight: bold;
+} */
 .control{
   width: 100%;
   padding: 8px 8px;
+  border-radius: 5px;
+  border: none;
 }
 .boton-formulario{
-  background-color: rgb(35, 228, 9);
+  background-color: #1159c3;
   font-size: 20px;
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
-  border-color: #EAC926;
-} */
+}
+
 /*  Ancho Maximo que funciona el sitio. Inicia Desde Acá para las tablets  */
 @media (min-width: 361px) and (max-width: 769px) {
   body {
@@ -209,16 +212,14 @@ header {
     padding: 15px;
   }
   .header-barra{
-    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .descripcion{
     display: flex;
   }
   .hand{
-    max-width: 350px;
-    text-align: right;
+    text-align: center;
   }
   .burger-menu{
     display: none;
