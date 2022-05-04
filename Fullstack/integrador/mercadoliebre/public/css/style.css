@@ -1,6 +1,7 @@
 :root {
   --colorazul: #1159c3;
 }
+/* CSS GENERAL BODY */
 
 body {
   font-family: 'Roboto';
@@ -19,6 +20,7 @@ main {
   margin-bottom: 50px;
 
 }
+/* CSS HEADER */
 
 .menu-principal ul {
   list-style: none;
@@ -34,26 +36,23 @@ main {
   padding: 5px 0px;
   font-size: 17px;
 }
+.main-header {
+  background-color: #EAC926;
+  padding: 15px;
+}
+
+.hand{
+  text-align: center;
+  font-size: 18px;
+}
 
 .logo {
   width: 50%;
+  margin: auto;
 }
+
 .barra-busqueda{
   width: 50%;
-}
-
-p {
-  font-size: 12px;
-}
-
-.titulares {
-  font-size: 24px;
-  text-align: left;
-  color: rgb(85, 84, 84);
-}
-
-.img-banner {
-  width: 100%;
 }
 
 .burger-menu {
@@ -68,6 +67,23 @@ p {
   margin: auto;
   }
 
+p {
+  font-size: 12px;
+}
+
+.img-banner {
+  width: 100%;
+}
+
+
+/*  CSS CONTENIDO PRINCIPAL */
+
+.titulares {
+  font-size: 24px;
+  text-align: left;
+  color: rgb(85, 84, 84);
+}
+
 .productos {
   padding: 15px;
   margin-bottom: 10px;
@@ -80,10 +96,12 @@ p {
   width: 80%;
   margin: auto;
 }
+
 img .producto-imagen{
   width: 150px;
   height: 150px;
 }
+
 .camion {
   margin: 0px;
   padding: 0px;
@@ -99,11 +117,9 @@ img .producto-imagen{
   border-radius: 50%;
   color: #39b54a;
   position: relative;
-
 }
 
 .cajageneral {
-
   box-sizing: border-box;
   padding-bottom: 5%;
   border-top: 1px solid #ebebeb;
@@ -128,14 +144,17 @@ img .producto-imagen{
   display: none;
 }
 
-header {
-  background-color: #EAC926;
-  padding: 15px;
-}
-
 .compra-cuotas {
   text-align: center;
 }
+
+.valores{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+/* CSS FOOTER */
 
 .footer {
   padding-top: 2em;
@@ -148,13 +167,9 @@ header {
   margin-bottom: 10px;
   font-size: 2em;
 }
-.valores{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
 
 /* CSS de registro y login */
+
 .formularioregistro{
   padding: 20px;
 }
@@ -186,23 +201,32 @@ header {
   body {
     width: auto;
   }
+
+  .logo {
+    width: 50%;
+  }
+
   .icon-footer {
     font-size: 1em;
   }
+
   .productos {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 44%;
     padding: 15px;
   }
+
   .menu-principal{
     display: none;
   }
+
   .contenedor-visita{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
   }
+
 }
 /* Resolucion minima 769px desktop*/
 @media (min-width: 770px) {
@@ -212,6 +236,7 @@ header {
     padding: 15px;
   }
   .header-barra{
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
   }
