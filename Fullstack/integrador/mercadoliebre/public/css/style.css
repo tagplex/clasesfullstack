@@ -40,19 +40,28 @@ main {
   background-color: #EAC926;
   padding: 15px;
 }
+.header-barra{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 
+}
 .hand{
   text-align: center;
   font-size: 18px;
 }
 
 .logo {
-  width: 50%;
-  margin: auto;
+  width: 44%;
 }
 
 .barra-busqueda{
-  width: 50%;
+  width: 44%;
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: none;
 }
 
 .burger-menu {
@@ -234,11 +243,6 @@ img .producto-imagen{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 23%;
     padding: 15px;
-  }
-  .header-barra{
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
   }
   .descripcion{
     display: flex;
