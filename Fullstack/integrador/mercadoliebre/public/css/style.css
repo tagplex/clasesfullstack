@@ -46,7 +46,7 @@ main {
 
 .header-barra {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -192,12 +192,22 @@ img .producto-imagen {
   margin-bottom: 15px;
 
 }
+div .radio{
+ display: inline;
+ font-size: 16px;
+ text-align: center;
+ padding-left: 15px;
+}
+.checkbox-categoria{
+  padding-top: 10px;
+}
 
-/* .control-formulario label{
+.control-formulario label{
   margin-bottom: 5px;
   display: block;
   font-weight: bold;
-} */
+}
+
 .control {
   width: 100%;
   padding: 8px 8px;
@@ -207,10 +217,15 @@ img .producto-imagen {
 
 .boton-formulario {
   background-color: #1159c3;
-  font-size: 20px;
+  font-size: 14px;
   color: white;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*  Ancho Maximo que funciona el sitio. Inicia Desde Acá para las tablets  */
