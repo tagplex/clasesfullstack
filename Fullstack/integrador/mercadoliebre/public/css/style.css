@@ -46,7 +46,7 @@ main {
 
 .header-barra {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -58,15 +58,17 @@ main {
   border-radius: 5px;
   border: none;
   margin-left: 20px;
+  flex: 1 1 50px;
 }
 
 .logo {
   width: 50%;
+  flex: 50px;
 }
 
 .hand {
-  text-align: center;
   font-size: 18px;
+  flex: 1 1 50px;
 }
 
 .burger-menu {
@@ -325,5 +327,8 @@ div .radio{
   }
   .contenedor-footer{
     padding: 50px;
+  }
+  .logo{
+    width: 50%;
   }
 }
