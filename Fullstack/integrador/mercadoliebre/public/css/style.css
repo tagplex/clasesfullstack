@@ -47,23 +47,22 @@ main {
 .header-ancho {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
 }
 
 .search {
-  width: 30%;
   padding: 8px 8px;
   border-radius: 5px;
   border: none;
   margin-left: 20px;
+  width: 40%;
 }
 .lupa{
   border: none;
   padding: 8px 8px;
-  margin-left: -20px;
+  margin-left: -1px;
   background-color: white;
   border-radius: 5px;
 }
@@ -140,8 +139,9 @@ img .producto-imagen {
   border-radius: 50%;
   color: #39b54a;
   position: absolute;
-  bottom: 80px;
-  right: 30px;
+  bottom: 20%;
+  right: 10%;
+  transition: all 450ms;
 }
 
 .cajageneral {
@@ -167,7 +167,6 @@ img .producto-imagen {
   font-weight: bold;
   text-align: center;
   display: none;
-  transition: display 1s;
 }
 
 .compra-cuotas {
@@ -270,10 +269,9 @@ div .radio{
     justify-content: space-evenly;
   }
   .camion{
-    bottom: 83px;
-    right: 30px;
+    bottom: 20%;
+    right: 10%;
   }
-  
 }
 
 /* Resolucion minima 769px desktop*/
@@ -286,14 +284,28 @@ div .radio{
   }
 
   .productos:hover .descripcion{
+    display: block;
+    bottom: -10%;
+    position: absolute;
     padding: 30px;
   }
 
+  .logo{
+    width: 100%;
+    flex: 1;
+  }
+  .search {
+    width: auto;
+    flex: 1;
+  }
   .hand {
-    text-align: center;
+    flex: 1;    
+    text-align: right;
   }
   .header-ancho{
-    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
     margin: auto;
   }
   .burger-menu {
@@ -305,6 +317,7 @@ div .radio{
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    margin-top: 3%;
   }
 
   .menu-principal ul {
@@ -322,8 +335,11 @@ div .radio{
     justify-content: space-evenly;
   }
   .camion{
-    bottom: 83px;
+    bottom: 60px;
     right: 30px;
+  }
+  .camion:hover{
+   transform:rotate(360deg);
   }
   .footer-flex{
     display: flex;
@@ -334,8 +350,5 @@ div .radio{
   }
   .contenedor-footer{
     padding: 50px;
-  }
-  .logo{
-    width: 50%;
   }
 }
