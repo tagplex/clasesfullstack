@@ -21,7 +21,8 @@
                 <img class="logo" src="/img/logo-mercado-liebre.svg" alt="">
             </div>
             <div div class="elementos-header">
-                <input type="text" class="search" placeholder="Buscar..">
+                <input type="text" class="search" placeholder="Buscar.."><button class="lupa"><i
+                        class="fas fa-search"></i></button>
             </div>
             <div div class="elementos-header">
                 <p class="hand">
@@ -47,23 +48,25 @@
         </nav>
     </header>
     <img class="img-banner" src="/img/img-home-banner.jpg" alt="">
-    <main> <form action="/" method="POST" class="formularioregistro">
+    <main>
+        <div class="formulario-registro">
+        <form action="/" method="POST" class="formularioregistro">
             <h2 class="titulares">Crear cuenta</h2>
             <div class="control-formulario">
-                <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido" class="control">
+                <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido" class="control" required>
             </div>
             <div class="control-formulario">
-                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="control">
+                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="control" required>
             </div>
             <div class="control-formulario">
-                <input type="text" name="email" placeholder="E-mail" class="control">
+                <input type="email" name="email" placeholder="E-mail" class="control" required>
             </div>
             <div class="control-formulario">
                 <label>Fecha de nacimiento</label>
-                <input type="date" name="fecha" class="control">
+                <input type="date" name="fecha" class="control" required>
             </div>
             <div class="control-formulario">
-                <input type="domicilio" name="domicilio" placeholder="Domicilio" class="control">
+                <input type="domicilio" name="domicilio" placeholder="Domicilio" class="control" required>
             </div>
             <div class="control-formulario radio-centrado">
                 <label>Perfil de usuario</label>
@@ -94,15 +97,16 @@
             </div>
             <div class="control-formulario">
                 <label>Contraseña:</label>
-                <input type="password" name="nombre-usuario" placeholder="Contraseña" class="control">
+                <input type="password" name="password" placeholder="Contraseña" class="control" required>
             </div>
             <div class="control-formulario">
                 <label>Repetir Contraseña:</label>
-                <input type="password" name="nombre-usuario" placeholder="Repetir Contraseña" class="control">
+                <input type="password" name="repeart-password" placeholder="Repetir Contraseña" class="control" required>
             </div>
             <button type="reset" class="boton-formulario">Reset</button>
             <button type="submit" class="boton-formulario">Enviar</button>
         </form>
+    </div>
     </main>
     <footer>
         <section class="footer">

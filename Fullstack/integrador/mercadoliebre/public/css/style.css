@@ -343,6 +343,8 @@ div .radio{
    transform:rotate(270deg);
   }
   .footer-flex{
+    margin: auto;
+    width: 70%;
     display: flex;
     flex-wrap: nowrap;
   }
@@ -354,5 +356,13 @@ div .radio{
   }
   .login:hover {
     background-color: #0022AA;
+  }
+  .formulario-registro{
+    width: 50%;
+    margin: auto;
+  }
+  .formulario-login{
+    width: 50%;
+    margin: auto;
   }
 }
