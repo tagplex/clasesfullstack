@@ -52,24 +52,27 @@ main {
   justify-items: center;
   padding: 10px;
 }
-.elementos-header{
+
+.elementos-header {
   width: 50%;
 }
 
 .search {
   padding: 8px 8px;
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
   border: none;
   margin-left: 20px;
   width: 50%;
-  
+
 }
-.lupa{
+
+.lupa {
   border: none;
   padding: 8px 8px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 0px 5px 5px 0px;
   left: -10px;
+  border-left: gray solid 1px;
 }
 
 .hand {
@@ -110,7 +113,6 @@ p {
   background-color: white;
   height: auto;
   box-sizing: border-box;
-  position: relative;
   transition: box-shadow 650ms;
 }
 
@@ -121,8 +123,8 @@ p {
 }
 
 img .producto-imagen {
-  width: 150px;
-  height: 150px;
+  width: 80%;
+  height: 80%;
 }
 
 .camion {
@@ -140,7 +142,7 @@ img .producto-imagen {
   border-radius: 50%;
   color: #39b54a;
   position: absolute;
-  bottom: 20%;
+  bottom: 55px;
   right: 10%;
   transition: all 1s;
 }
@@ -150,6 +152,7 @@ img .producto-imagen {
   padding-bottom: 5%;
   border-top: 1px solid #ebebeb;
   padding: 10px;
+  position: relative;
 }
 
 .precios {
@@ -195,7 +198,8 @@ img .producto-imagen {
   font-size: 2em;
   transition: color 450ms;
 }
-.copyright{
+
+.copyright {
   padding-bottom: 50px;
 }
 
@@ -209,17 +213,19 @@ img .producto-imagen {
   margin-bottom: 15px;
 
 }
-div .radio{
- display: inline;
- font-size: 16px;
- text-align: center;
- padding-left: 15px;
+
+div .radio {
+  display: inline;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 15px;
 }
-.checkbox-categoria{
+
+.checkbox-categoria {
   padding-top: 10px;
 }
 
-.control-formulario label{
+.control-formulario label {
   margin-bottom: 5px;
   display: block;
   font-weight: bold;
@@ -243,7 +249,7 @@ div .radio{
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
-  transition: background-color 1s ;
+  transition: background-color 1s;
 }
 
 /*  Ancho Maximo que funciona el sitio. Inicia Desde Acá para las tablets  */
@@ -263,16 +269,21 @@ div .radio{
   .menu-principal {
     display: none;
   }
-  
+
   .contenedor-visita {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .camion{
-    bottom: 20%;
+
+  .camion {
+    bottom: 55px;
     right: 10%;
+  }
+
+  .search{
+    width: 50%;
   }
 }
 
@@ -282,32 +293,34 @@ div .radio{
     width: 23%;
     height: 100%;
   }
-  .productos:hover{
+  .productos:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
- .productos:hover .descripcion{
+
+  .productos:hover .descripcion {
     display: block;
-    bottom: -10%;
+    bottom: -2%;
     position: absolute;
-    padding: 45px;
     font-size: 1em;
   }
-  .valores{
+
+  .valores {
     flex-wrap: wrap;
     padding-bottom: 10%;
     padding-left: 10px;
   }
+
   .hand {
-      font-size: 20px;
+    font-size: 20px;
   }
-  .header-ancho{
-    display: flex;
+
+  .header-ancho {
     flex-wrap: nowrap;
-    justify-content: space-evenly;
     width: 70%;
     margin: auto;
     align-items: center;
   }
+
   .burger-menu {
     display: none;
   }
@@ -334,34 +347,48 @@ div .radio{
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .camion{
-    bottom: 22%;
-    right: 20%;
+
+  .camion {
+    bottom: 90px;
+    right: 10%;
   }
-  .camion:hover{
-   transform:rotate(270deg);
+
+  .camion:hover {
+    transform: rotate(270deg);
   }
-  .footer-flex{
+
+  .footer-flex {
     margin: auto;
     width: 70%;
     display: flex;
     flex-wrap: nowrap;
   }
-  .icon-footer:hover{
+
+  .icon-footer:hover {
     color: #EAC926;
   }
-  .contenedor-footer{
+
+  .contenedor-footer {
     padding: 50px;
   }
+
   .login:hover {
     background-color: #0022AA;
   }
-  .formulario-registro{
+
+  .formulario-registro {
     width: 50%;
     margin: auto;
   }
-  .formulario-login{
+
+  .formulario-login {
     width: 50%;
     margin: auto;
+  }
+  .logo{
+    width: 80%;
+  }
+  .elementos-header {
+    width: 50%;
   }
 }
