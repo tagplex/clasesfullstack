@@ -298,7 +298,7 @@ div .radio {
 
   .productos:hover .descripcion {
     display: block;
-    bottom: -2%;
+    top: 40%;
     position: absolute;
   }
 
