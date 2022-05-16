@@ -11,14 +11,14 @@ app.listen(3000, (req, res) => {
 app.use("/", rutasMain);
 app.use("/productos", rutasProductos);
 
-/* const serie = [
+ const serie = [
     {
         id: 0,
         nombre: "GOT"
     },
     {
         id: 1,
-        nombre: "SUITS"
+        nombre: "DBZ"
     },
     {
         id: 2,
@@ -26,13 +26,16 @@ app.use("/productos", rutasProductos);
     }
 ]
 
-
-
-app.get('/serie/:idSerie', function (req, res) {
-    if (serie[req.params.idSerie] ){
+app.get ("/serie/:id", function(req, res){
+    if(serie[req.params.id] == null){
         res.send("No existe")
-    } else {
-        res.send(serie[req.params.idSerie])
-  
+    }else{
+        res.send(serie);
     }
-}) */
+});
+
+/* app.get ("/serie/:id", function(req, res){
+    let idSerie = req.params.id;
+    let nombreSerie = req.params.nombre;
+    res.send(idSerie + nombreSerie);
+}); */
