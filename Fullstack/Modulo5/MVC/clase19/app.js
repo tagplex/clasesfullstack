@@ -11,7 +11,7 @@ app.listen(3000, (req, res) => {
 app.use("/", rutasMain);
 app.use("/productos", rutasProductos);
 
- const serie = [
+/*  const serie = [
     {
         id: 0,
         nombre: "GOT"
@@ -27,15 +27,9 @@ app.use("/productos", rutasProductos);
 ]
 
 app.get ("/serie/:id", function(req, res){
-    if(serie[req.params.id] == null){
+    if(serie[req.params.id] == undefined){
         res.send("No existe")
     }else{
-        res.send(serie);
+        res.send(serie[req.params.id]);
     }
-});
-
-/* app.get ("/serie/:id", function(req, res){
-    let idSerie = req.params.id;
-    let nombreSerie = req.params.nombre;
-    res.send(idSerie + nombreSerie);
 }); */

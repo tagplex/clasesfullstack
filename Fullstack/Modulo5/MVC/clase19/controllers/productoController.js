@@ -1,10 +1,10 @@
 let  productosController = {
 
-    listado: function(){
-        return "Estas listando productos";
+    listado: (req, res) => {
+        res.send("Listado de productos")
     },
     crear: function(){},
     detalle: function(){},
     detalleComentarios: function(){}
 };
-modulo.exports = productosController;
+module.exports = productosController;
