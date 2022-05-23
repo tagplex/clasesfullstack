@@ -1,12 +1,15 @@
 const path = require("path");
 
-let mainController = {
-   
-    index: (req, res) =>{
+let detalleController = {
 
-        const listaPlatos = [
+    detalle: (req, res) => {
+
+        res.send("Work");
+
+        /* const listaPlatos = [
+
             {
-                id:1,
+                id: 1,
                 titulo: 'Carpaccio fresco',
                 descripcionCorta: 'Entrada Carpaccio de salmón con cítricos',
                 descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident',
@@ -14,7 +17,7 @@ let mainController = {
                 img: 'Carpaccio-de-salmon.jpg'
             },
             {
-                id:2,
+                id: 2,
                 titulo: 'Risotto de berenjena',
                 descripcionCorta: 'Risotto de berenjena y queso de cabra',
                 descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident',
@@ -22,7 +25,7 @@ let mainController = {
                 img: 'Risotto-berenjena-queso-cabra.jpg'
             },
             {
-                id:3,
+                id: 3,
                 titulo: 'Mousse de arroz',
                 descripcionCorta: 'Mousse de arroz con leche y aroma de azahar',
                 descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident',
@@ -30,7 +33,7 @@ let mainController = {
                 img: 'Mousse-de-arroz-con-leche.jpg'
             },
             {
-                id:4,
+                id: 4,
                 titulo: 'Espárragos blancos',
                 descripcionCorta: 'Espárragos blancos con vinagreta de verduras y jamón ibérico',
                 descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident',
@@ -38,7 +41,7 @@ let mainController = {
                 img: 'esparragos.png'
             },
             {
-                id:5,
+                id: 5,
                 titulo: 'Pollo a la naranja',
                 descripcionCorta: 'Espárragos blancos con vinagreta de verduras y jamón ibérico',
                 descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident',
@@ -46,8 +49,8 @@ let mainController = {
                 img: 'esparragos.png'
             }
         ]
-        res.render("index.ejs", {"listaPlatos": listaPlatos})
+        res.render("detalleMenu.ejs", { "listaPlatos": listaPlatos }) */
     }
 }
 
-module.exports = mainController;
+module.exports = detalleController;

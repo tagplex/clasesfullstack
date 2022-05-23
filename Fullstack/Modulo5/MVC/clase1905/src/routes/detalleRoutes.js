@@ -1,10 +1,8 @@
 const express = require("express");
-const mainController = require("../controllers/mainController.js");
 const detalleController = require("../controllers/detalleController.js");
 const router = express.Router();
 
 
-router.get("/", mainController.index);
-router.get("/detalle", detalleController.detalle);
+router.get("/:id", detalleController.detalle);
 
 module.exports = router;

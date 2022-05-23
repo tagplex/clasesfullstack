@@ -58,7 +58,7 @@
           <h1 class="ps-center">Nuentro Menu</h1>
           <br />
           <% for (let i = 0; i < listaPlatos.length; i++) { %> 
-          <h4> <%= listaPlatos[i].titulo %> </h4>
+          <h4> <a href="/detalle/<%= listaPlatos[i].id %>"> <%= listaPlatos[i].titulo %> </a></h4>
           <p class="ps-text-grey">
             <%= listaPlatos[i].descripcionCorta %>
           </p>

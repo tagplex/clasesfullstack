@@ -15,3 +15,4 @@ app.listen(3030, ()=>{
 })
 
 app.use("/", rutasMain);
+app.use("/detalle", rutasMain);
