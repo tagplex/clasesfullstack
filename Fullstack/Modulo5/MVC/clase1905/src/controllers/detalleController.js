@@ -3,6 +3,10 @@ const path = require("path");
 
 let detalleController = {
 
+    index: (req, res) => {
+        res.send("Pagina funcionando")
+    },
+
     detalle: (req, res) => {
 
         const listaPlatos = [
@@ -48,8 +52,8 @@ let detalleController = {
                 img: 'esparragos.png'
             }
         ]
-        let idSeleccionado = req.params.id;
-        res.render("detalleMenu.ejs", { "listaPlatos": listaPlatos[idSeleccionado] })
+        
+        res.render("detalleMenu.ejs", { "listaPlatos": listaPlatos[req.params.id] })
     }
 }
 

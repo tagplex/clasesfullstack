@@ -5,6 +5,6 @@ const router = express.Router();
 
 
 router.get("/", mainController.index);
-router.get("/detalle", detalleController.detalle);
+router.get("/detalle", detalleController.index);
 
 module.exports = router;
