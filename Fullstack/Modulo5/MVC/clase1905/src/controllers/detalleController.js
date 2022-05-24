@@ -1,4 +1,4 @@
-const { read, readFileSync } = require("fs");
+
 const path = require("path");
 
 let detalleController = {
@@ -52,14 +52,12 @@ let detalleController = {
                 img: 'esparragos.png'
             }
         ]
-        for (let i = 0; i < listaPlatos.length; i++) {
-            if (listaPlatos[i] == req.params.id) {
+            if(listaPlatos[req.params.id] == undefined){
+                res.render("404.ejs")
+            }else{
                 res.render("detalleMenu.ejs", { "listaPlatos": listaPlatos[req.params.id] })
-            } else {
-                res.render("404.ej")
             }
         }
     }
-}
 
 module.exports = detalleController;
