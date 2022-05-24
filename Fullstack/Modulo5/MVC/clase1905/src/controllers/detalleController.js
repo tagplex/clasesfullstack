@@ -1,10 +1,10 @@
-const { read } = require("fs");
+const { read, readFileSync } = require("fs");
 const path = require("path");
 
 let detalleController = {
 
     index: (req, res) => {
-        res.send("Pagina funcionando")
+        res.send("Pagina no encontrada")
     },
 
     detalle: (req, res) => {
@@ -52,8 +52,13 @@ let detalleController = {
                 img: 'esparragos.png'
             }
         ]
-        
-        res.render("detalleMenu.ejs", { "listaPlatos": listaPlatos[req.params.id] })
+        for (let i = 0; i < listaPlatos.length; i++) {
+            if (listaPlatos[i] == req.params.id) {
+                res.render("detalleMenu.ejs", { "listaPlatos": listaPlatos[req.params.id] })
+            } else {
+                res.render("404.ej")
+            }
+        }
     }
 }
 

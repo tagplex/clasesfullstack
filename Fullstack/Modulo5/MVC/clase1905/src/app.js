@@ -16,5 +16,5 @@ app.listen(3030, ()=>{
 })
 
 app.use("/", rutasMain);
-app.use("/detalle", rutasMain);
-app.use("/:id", rutasDetail);
+
+app.use("/detalle", rutasDetail);
