@@ -52,12 +52,15 @@ let detalleController = {
                 img: 'esparragos.png'
             }
         ]
-            if(listaPlatos[req.params.id] == undefined){
-                res.render("404.ejs")
-            }else{
-                res.render("detalleMenu.ejs", { "listaPlatos": listaPlatos[req.params.id] })
-            }
+        /* listaPlatos.find(listaPlatos.id == req.params.id); */
+
+
+         if(listaPlatos[req.params.id] == undefined){
+            res.render("404.ejs")
+        }else{
+            res.render("detalleMenu.ejs", { "listaPlatos": listaPlatos[req.params.id] })
         }
     }
+}
 
 module.exports = detalleController;
