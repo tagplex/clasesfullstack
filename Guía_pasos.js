@@ -79,8 +79,8 @@ y luego en el boton modificar enviar mediante put */
 }) 
 
 const upload = multer({storage o storage:storage})
-
-
-router.post("/", upload.single("nombredevariabledeform"),controaladorEjemplo.ejemplo);
-
+//Procesamiento del formulario de creación
+router.post("/", upload.single("nombredevariabledeform"),controller.store u otro);
 */
+/* En el lado del controlador para manejar el archivo */
+//Usamos req.file
