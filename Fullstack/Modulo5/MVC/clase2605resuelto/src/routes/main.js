@@ -4,8 +4,8 @@ const router = express.Router();
 
 // ************ Controller Require ************
 const mainController = require('../controllers/mainController');
-
-router.get('/', mainController.index); 
+/* Estas son las rutas que este enrutador puede responder. Por cada ruta se requiere una */
+router.get('/', mainController.index);
 router.get('/search', mainController.search); 
 
 module.exports = router;

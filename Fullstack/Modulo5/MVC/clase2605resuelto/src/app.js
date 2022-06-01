@@ -9,7 +9,7 @@ const app = express();
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false })); // Para que se usa??
-app.use(express.json()); // Para que se usa??
+app.use(express.json()); // Para traer información del body
 app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
 
 // ************ Template Engine - (don't touch) ************

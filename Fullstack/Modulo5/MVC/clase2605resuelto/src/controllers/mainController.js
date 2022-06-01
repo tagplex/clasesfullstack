@@ -2,16 +2,18 @@ const fs = require('fs');
 const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-const visited = products.filter(function(product){
-	return product.category == 'visited'
-})
-const inSale = products.filter(function(product){
-	return product.category == 'in-sale'
-})
+
+
 const controller = {
 	index: (req, res) => {
+		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+		const visited = products.filter(function(product){
+			return product.category == 'visited'
+		})
+		const inSale = products.filter(function(product){
+			return product.category == 'in-sale'
+		})
 		res.render('index', {
 			visited,
 			inSale

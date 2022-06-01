@@ -1,9 +1,9 @@
 [
  {
-  "id": 1,
-  "name": "PAtatata",
-  "price": "",
-  "discount": "",
+  "id": "1",
+  "name": "Cafetera",
+  "price": "150",
+  "discount": "0",
   "category": "",
   "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
   "image": "img-cafetera-moulinex.jpg"
@@ -115,23 +115,5 @@
   "discount": 12,
   "image": "img-bicicleta-fierce.jpg",
   "category": "visited"
- },
- {
-  "id": 16,
-  "name": "Sony Srs-xb12 Parlante Bluetooth Portátil",
-  "price": 4699,
-  "discount": 5,
-  "category": "in-sale",
-  "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
-  "image": "img-parlante-sony.jpg"
- },
- {
-  "id": 17,
-  "name": "Patito",
-  "price": "4000",
-  "discount": "20",
-  "category": "visited",
-  "description": "Patito de goma",
-  "image": "default-image.png"
  }
 ]
