@@ -9,11 +9,11 @@
   "image": "img-cafetera-moulinex.jpg"
  },
  {
-  "id": 2,
+  "id": "2",
   "name": "Macbook Pro 2022",
-  "price": 500,
-  "discount": 3,
-  "category": "in-sale",
+  "price": "500",
+  "discount": "3",
+  "category": "",
   "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3\" Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante",
   "image": "img-macbook-pro-2019.jpg"
  },
@@ -72,22 +72,22 @@
   "category": "in-sale"
  },
  {
-  "id": 11,
+  "id": "11",
   "name": "Parlante Inalámbrico Bose Soundtouch 10",
+  "price": "5",
+  "discount": "100",
+  "category": "",
   "description": "Parlante Inalámbrico Bose Soundtouch 10. SoundTouch®.La manera más sencilla de reproducir música en todo su hogar de forma inalámbrica. Características. » Marca: Bose. » Modelo: SoundTouch. » Color: Negro",
-  "price": 29990,
-  "discount": 12,
-  "image": "img-parlante-bose.jpg",
-  "category": "visited"
+  "image": "img-parlante-bose.jpg"
  },
  {
-  "id": 12,
+  "id": "12",
   "name": "Home Theatre Sony Bdv-e4100",
+  "price": "32990",
+  "discount": "0",
+  "category": "",
   "description": "El sonido Surround de 5.1 canales y 1000 W proporciona un audio de verdadero impacto en los efectos especiales de películas y efectos de sonido de música y deportes. Con la tecnología Near Field Communication(NFC) podés disfrutar de Sonido One- Touch para reproducir música de forma instantánea",
-  "price": 32990,
-  "discount": 0,
-  "image": "img-home-theater-sony.jpg",
-  "category": "visited"
+  "image": "img-home-theater-sony.jpg"
  },
  {
   "id": 13,
