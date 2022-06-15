@@ -84,3 +84,15 @@ router.post("/", upload.single("nombredevariabledeform"),controller.store u otro
 */
 /* En el lado del controlador para manejar el archivo */
 //Usamos req.file
+
+/*********EXPRESS-VALIDATOR ****/
+// Instalar con npm install express-validator
+// EV se ejecuta primero en router, mediante un array y en el contrlador y el metodo especifico que ejecuta la ruta
+//se require con const { body } = rqr("express-validator")
+//const validaciones = [ body("nombredecampohtml").notEmpty(), body("otronamedehtml").notEmpty(), etc]
+//Para pasar al contralador, se pasa la variable o arreglo que almacena la validación como middleware **Entre la ruta y el controlador**
+//En el contralador, requerimos la funcion validadora que generamos en el archivo router
+//se requiere **const { nombrevariable } = require("express-validator");
+//En el controlador se guarda en una variable local
+//storeUser: (req, res) => { let variable = validationReulst(req); }
+//Los errores se envian como array hacia la vista, de esa forma los podemos recorrer error.array()

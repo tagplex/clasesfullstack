@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require('path');
 const methodOverride = require('method-override'); // Para poder usar los métodos PUT y DELETE
-
+const logMiddleware = require("./middlewares/logMiddleware");
 // ************ express() - (don't touch) ************
 const app = express();
 
@@ -20,6 +20,7 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 const mainRouter = require('./routes/main'); // Rutas main
 const productsRouter = require('./routes/products'); // Rutas /products
 
+app.use(logMiddleware);
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
 
