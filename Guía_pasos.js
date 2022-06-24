@@ -96,3 +96,5 @@ router.post("/", upload.single("nombredevariabledeform"),controller.store u otro
 //En el controlador se guarda en una variable local
 //storeUser: (req, res) => { let variable = validationReulst(req); }
 //Los errores se envian como array hacia la vista, de esa forma los podemos recorrer error.array()
+
+///sudo /opt/lampp/manager-linux-x64.run
