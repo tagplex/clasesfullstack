@@ -1,7 +1,14 @@
+const db = require("../database/models");
+
 const moviesController = {
     'list': (req, res) => {
-        // Do the magic
-        res.send("Listado de peliculas")
+        db.movies.findAll()
+        .then(function(respuesta){
+            res.send(respuesta)
+        })
+        .catch(function(error){
+            res.send(error)
+        })
     },
     'detail': (req, res) => {
         // Do the magic
