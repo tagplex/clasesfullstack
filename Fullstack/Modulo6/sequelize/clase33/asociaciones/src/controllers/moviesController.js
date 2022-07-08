@@ -3,6 +3,7 @@ const sequelize = db.sequelize;
 
 //Otra forma de llamar a los modelos
 const Movies = db.Movie;
+const Genres = db.Genre;
 
 const moviesController = {
     'list': (req, res) => {
@@ -42,7 +43,10 @@ const moviesController = {
             });
     }, //Aqui debemos modificar y completar lo necesario para trabajar con el CRUD
     add: function (req, res) {
-        return res.render('moviesAdd.ejs');        
+        Genres.findAll()
+        .then(genres =>{
+            return res.render('moviesAdd.ejs', {allGenres: genres});   
+        })             
     },
     create: function (req, res) {
         Movies
@@ -62,9 +66,18 @@ const moviesController = {
     },
     edit: function(req, res) {
         let movieId = req.params.id;
-        Movies.findByPk(movieId)
+        Movies.findByPk(movieId, {
+            include: [
+                {association: "genres"},
+                {association: "actors"}
+            ]
+        })
             .then(Movie => {
-                return res.render('moviesEdit', {Movie})
+                Genres.findAll()
+                .then(genres =>{
+                    return res.render('moviesEdit', {Movie, allGenres: genres})
+                })
+    
             });      
     },
     update: function (req,res) {

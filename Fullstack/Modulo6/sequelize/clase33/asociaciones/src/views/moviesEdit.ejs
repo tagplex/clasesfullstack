@@ -25,6 +25,20 @@
             <p><input type="date" name="release_date" id="release_date" value="<%= Movie.release_date %>" required></p>
             <label for="length">Length </label>
             <p><input type="number" name="length" id="" value="<%= Movie.length %>" required></p>
+            <label for="genre">Genres </label>
+            <p><select name="genre_id" id="genre">
+                <option value="" selected disabled>Elige un género</option>
+                <!-- Cargamos desde all el array del allgenres desde add desde el controlador  -->
+                <% allGenres.forEach(genre => { %>
+                    <option value="<%= genre.id %>" 
+                        <% if (Movie.genres.id == genre.id) { %>
+                            selected
+                        <% } %>
+                        >
+                        <%= genre.name %>
+                    </option>
+                <% }) %>
+            </select></p>
             <br>
             <p> <button class="botonAgregar" type="submit">Actualizar</button>
         
